@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+# This is a React Styled Components App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a simple React Application demonstrating how to use Styled Components
+for styling and theming. This App includes two different pages: Landing Page amd a User Profile Page.
+Both of these pages with light/dark mode support, also these pages are responsive design.
 
-## Available Scripts
+### Installation 
+1. Clone the repository
 
-In the project directory, you can run:
+gh repo clone MiguelGarcia-28/my-styled-components-app
+cd my-styled-components-app
 
-### `npm start`
+2. Install dependencies
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+npm start
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+3. Start the development server:
 
-### `npm test`
+npm start
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    Project Structure
+|
+|-- components/
+|   |-- Header.js       # Navigation bar with theme toggle
+|   |-- Footer.js       # Footer with copyright
+|   |-- LandingPage.js  # Main Landing Page
+|   |-- ProfilePage.js  # User profile page
+|
+|-- styles/
+|   |-- HeaderStyles.js
+|   |-- FooterStyles.js
+|   |-- LandingPageStyles.js
+|   |-- ProfilePageStyles.js
+|
+|-- themes/
+|   |-- theme.js        # Light and Dark theme definitions
+|
+|-- App.js              # Main App
+|-- index.js
+|-- GlobalStyles.js
 
-### `npm run build`
+ Styling with Styled Components
+This app uses Styled Components for component-scoped styling:
+- Each UI component has its own styled file for modularity and readability.
+- Dynamic styles via props are used for hover states and theming.
+- Media queries inside styled-components ensure responsive design.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+ Theming
+We use ThemeProvider from Styled Components to apply light and dark themes globally:
+- Themes are defined in themes/theme.js.
+- A toggle button in the Header switches between light and dark mode.
+- Global styles automatically adapt to the selected theme.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+ Responsive Design
+Styled Components include media queries to adjust layouts and font sizes for smaller screen
+widths, ensuring a smooth experience on mobile, tablet, and desktop.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+ Built With
+- React
+- Styled Components
+- React Router DOM
